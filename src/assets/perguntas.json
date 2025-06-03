@@ -1,12 +1,5 @@
 [
   {
-    "id": 0,
-    "pergunta1": "Digite seu nome:",
-
-    "pergunta2": "Telefone de contato: ",
-    "form": 1
-  },
-  {
     "id": 1,
     "pergunta": "Tenho facilidade para organizar ideias, pessoas, tarefas, coisas e/ou tempo."
   },
