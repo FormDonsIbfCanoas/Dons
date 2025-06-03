@@ -19,9 +19,9 @@ export class ResultsComponent {
         (a: { score: number }, b: { score: number }) => b.score - a.score
       );
       this.topDons = res.slice(0, 3);
-      this.resultados = res.slice(3, res.length);
-      console.log(this.topDons);
-      console.log(this.resultados);
+      this.resultados = res.slice(3, res.length)
+      localStorage.setItem("arrayTop3Competencias",JSON.stringify(this.topDons))
+      localStorage.setItem("arrayCompetenciasRestantes",JSON.stringify(this.resultados))
     } else {
       route.navigate(['/']);
     }
