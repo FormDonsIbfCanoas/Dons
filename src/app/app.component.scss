@@ -1,0 +1,29 @@
+.content-container {
+    margin-top: 80px;
+}
+
+.mais-biblia {
+    border-radius: 50%;
+    width: 130px;
+}
+
+.drawer-container {
+    height: 100vh;
+}
+
+.drawer-inner {
+    padding: 20px 35px;
+}
+
+.icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+mat-list {
+    ::ng-deep {
+        .mat-list-item-content {
+            padding: 0!important;
+        }
+    }
+}

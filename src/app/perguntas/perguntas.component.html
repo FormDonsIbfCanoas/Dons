@@ -1,0 +1,57 @@
+<div class="container">
+  <!-- Quando mostrarPerguntas for true, exibe as perguntas -->
+  <form [formGroup]="formulario" *ngIf="mostrarPerguntas; else contatoForm">
+    <mat-stepper formArrayName="perguntas">
+      <mat-step
+        [formGroupName]="i"
+        *ngFor="let pergunta of perguntas.controls; let i = index"
+      >
+        <span>{{ perguntasTitle[i] }}</span>
+
+        <div class="slider">
+          <ngx-slider [options]="options" formControlName="pontos"></ngx-slider>
+        </div>
+
+        <input formControlName="perguntaId" type="hidden" />
+
+        <div class="footer">
+          <button mat-button matStepperPrevious>Voltar</button>
+          <span>{{ i + 1 }} / {{ perguntas.controls.length }}</span>
+          <button
+            mat-button
+            matStepperNext
+            *ngIf="i + 1 < perguntas.controls.length"
+          >
+            Próxima
+          </button>
+          <button
+            mat-button
+            (click)="submitForm()"
+            *ngIf="i + 1 == perguntas.controls.length"
+          >
+            Ver Resultado
+          </button>
+        </div>
+      </mat-step>
+    </mat-stepper>
+  </form>
+
+  <!-- Caso contrário, mostra o formulário alternativo -->
+  <ng-template #contatoForm>
+    <form [formGroup]="contatoFormGroup" class="container-form">
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="nome" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input class="teste" matInput formControlName="telefone" required />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="enviarContato()">
+        Enviar
+      </button>
+    </form>
+  </ng-template>
+</div>

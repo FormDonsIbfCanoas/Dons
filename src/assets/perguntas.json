@@ -1,0 +1,237 @@
+[
+  {
+    "id": 0,
+    "pergunta1": "Digite seu nome:",
+
+    "pergunta2": "Telefone de contato: ",
+    "form": 1
+  },
+  {
+    "id": 1,
+    "pergunta": "Tenho facilidade para organizar ideias, pessoas, tarefas, coisas e/ou tempo."
+  },
+  {
+    "id": 2,
+    "pergunta": "Adapto-me bem à situação de começar um novo grupo ou ministério que contribui para o crescimento espiritual de pessoas."
+  },
+  {
+    "id": 3,
+    "pergunta": "Gosto de trabalhar criativamente com madeira, tecido, tinta, metal, vidro e/ou outros materiais."
+  },
+  {
+    "id": 4,
+    "pergunta": "Gosto de executar tarefas pequenas ou simples e por vezes faço sem ninguém pedir."
+  },
+  {
+    "id": 5,
+    "pergunta": "Enquanto leio ou estudo a Bíblia, o Espírito Santo ilumina o meu entendimento sobre verdades bíblicas que ajudam outras pessoas no corpo de Cristo."
+  },
+  {
+    "id": 6,
+    "pergunta": "Contribuo financeiramente e com alegria para a igreja local, ajudo pessoas com necessidades financeiras e sou sensível a projetos que precisam de verba."
+  },
+  {
+    "id": 7,
+    "pergunta": "Identifico falsidade ou engano antes que sejam evidentes para outras pessoas."
+  },
+  {
+    "id": 8,
+    "pergunta": "Normalmente consigo perceber o potencial das pessoas e gosto de estimulá-las a crescerem"
+  },
+  {
+    "id": 9,
+    "pergunta": "Dedico tempo para estudar a Palavra de Deus, para comunicá-la de modo eficaz e profundo."
+  },
+  {
+    "id": 10,
+    "pergunta": "Tenho facilidade em comunicar o evangelho para que seja relevante à realidade das pessoas."
+  },
+  {
+    "id": 11,
+    "pergunta": "Gosto de separar momentos para refletir, desenvolver minha imaginação e ideias."
+  },
+  {
+    "id": 12,
+    "pergunta": "Tenho confiança na provisão e ajuda contínua de Deus, mesmo em tempos difíceis."
+  },
+  {
+    "id": 13,
+    "pergunta": "Gosto de conhecer pessoas novas e de ajudá-las a se sentirem bem-vindas."
+  },
+  {
+    "id": 14,
+    "pergunta": "Recebo pedidos de oração de outras pessoas e oro por eles regularmente."
+  },
+  {
+    "id": 15,
+    "pergunta": "Consigo ajustar meu estilo de liderança para que outros façam seu melhor por uma causa ou projeto."
+  },
+  {
+    "id": 16,
+    "pergunta": "Consigo apoiar, pacientemente, aqueles que atravessam experiências dolorosas enquanto tentam normalizar suas vidas."
+  },
+  {
+    "id": 17,
+    "pergunta": "Gosto de gastar tempo ensinando e cuidando das pessoas."
+  },
+  {
+    "id": 18,
+    "pergunta": "Proclamo a verdade de Deus com confiança, mesmo onde ela não é popular ou aceita."
+  },
+  {
+    "id": 19,
+    "pergunta": "As pessoas me procuram para conselhos sobre assuntos espirituais ou pessoais."
+  },
+  {
+    "id": 20,
+    "pergunta": "Sei definir alvos e objetivos e desenvolver estratégias para realizá-los."
+  },
+  {
+    "id": 21,
+    "pergunta": "Tenho facilidade em me adaptar a novos ambientes e me relacionar com pessoas respeitando as diferenças culturais."
+  },
+  {
+    "id": 22,
+    "pergunta": "Tenho habilidade em trabalhar com vários tipos de ferramentas (alicate, martelo, tesoura, etc.)"
+  },
+  {
+    "id": 23,
+    "pergunta": "Fico muito à vontade quando posso ser útil em fazer certas tarefas auxiliares (arrumar cadeiras, transportar objetos, manter a ordem, cozinhar, construir ou reformar o prédio, secretariar uma reunião, controlar o aparelho de som, etc.)."
+  },
+  {
+    "id": 24,
+    "pergunta": "Eu tenho a percepção de que alguma coisa que ninguém mencionou pode ter  acontecido e, quando pergunto sobre isso, minha percepção é confirmada."
+  },
+  {
+    "id": 25,
+    "pergunta": "Se necessário, estou disposto a reduzir meu padrão de vida para que possa abençoar pessoas e contribuir com um percentual maior da minha renda."
+  },
+  {
+    "id": 26,
+    "pergunta": "Percebo com facilidade o que está certo ou errado em uma situação ou atitude."
+  },
+  {
+    "id": 27,
+    "pergunta": "Consigo confrontar pessoas de modo que elas revejam suas atitudes e cresçam espiritualmente."
+  },
+  {
+    "id": 28,
+    "pergunta": "Gosto de entender bem as questões importantes da Bíblia e ajudar pessoas a compreendê-las sem dificuldades."
+  },
+  {
+    "id": 29,
+    "pergunta": "Falo aberta e confiantemente sobre o que Cristo fez por mim."
+  },
+  {
+    "id": 30,
+    "pergunta": "Gosto de usar e aperfeiçoar uma ou mais de minhas habilidades artísticas (arte, teatro, música, fotografia etc.)."
+  },
+  {
+    "id": 31,
+    "pergunta": "Posso ir em frente, apesar da oposição ou falta de apoio, quando percebo a benção de Deus em alguma área, empreendimento ou situação."
+  },
+  {
+    "id": 32,
+    "pergunta": "Gosto de criar um ambiente onde as pessoas não se sintam sozinhas."
+  },
+  {
+    "id": 33,
+    "pergunta": "Gosto de passar longos períodos em oração e receber direção quanto aos assuntos que levo diante de Deus."
+  },
+  {
+    "id": 34,
+    "pergunta": "Enxergo para onde eu e outros devemos ir e sei planejar os passos para chegarmos lá."
+  },
+  {
+    "id": 35,
+    "pergunta": "Gosto de ajudar as pessoas consideradas “sem jeito”, sem esperança, ignoradas ou desconhecidas pela maioria."
+  },
+  {
+    "id": 36,
+    "pergunta": "Gosto de ajudar as pessoas relacionalmente, emocionalmente, espiritualmente etc."
+  },
+  {
+    "id": 37,
+    "pergunta": "Gosto de repassar mensagens guiadas pela Palavra de Deus para edificar, exortar ou confortar."
+  },
+  {
+    "id": 38,
+    "pergunta": "Costumo encontrar soluções simples e práticas no meio de conflito ou confusão."
+  },
+  {
+    "id": 39,
+    "pergunta": "Posso identificar e usar os recursos necessários para realizar tarefas de forma eficiente."
+  },
+  {
+    "id": 40,
+    "pergunta": "Tenho uma visão bíblica de como a igreja deve funcionar e contribuo para que ela cresça de forma saudável."
+  },
+  {
+    "id": 41,
+    "pergunta": "Tenho jeito para trabalhar com as mãos e gosto de fazer isso."
+  },
+  {
+    "id": 42,
+    "pergunta": "Pessoas dizem que por meio da minha atuação ministerial elas se tornam mais eficazes em seus ministérios."
+  },
+  {
+    "id": 43,
+    "pergunta": "Recebo informações ou direcionamentos do Espírito que claramente não adquiri por meios naturais."
+  },
+  {
+    "id": 44,
+    "pergunta": "Tenho tanta certeza de que Deus suprirá minhas necessidades que estou constantemente ofertando de forma generosa."
+  },
+  {
+    "id": 45,
+    "pergunta": "Posso dizer, com pouca margem de erro, quando espíritos malignos estão agindo sobre uma situação ou pessoa."
+  },
+  {
+    "id": 46,
+    "pergunta": "Sou capaz de incentivar as pessoas que precisam tomar passos corajosos em sua fé, família ou vida."
+  },
+  {
+    "id": 47,
+    "pergunta": "Pessoas dizem que eu as ajudo a compreender as verdades bíblicas de forma simples e profunda."
+  },
+  {
+    "id": 48,
+    "pergunta": "Tenho facilidade em iniciar conversas com pessoas diferentes e levá-las ao conhecimento de Cristo."
+  },
+  {
+    "id": 49,
+    "pergunta": "Pessoas dizem que são edificadas quando exerço meus talentos artísticos."
+  },
+  {
+    "id": 50,
+    "pergunta": "Já tive a experiência de crer em Deus para coisas aparentemente impossíveis que vieram a acontecer."
+  },
+  {
+    "id": 51,
+    "pergunta": "Minha casa está sempre aberta para receber e acolher pessoas."
+  },
+  {
+    "id": 52,
+    "pergunta": "Quando sei de uma necessidade, sinto-me constrangido a orar por ela."
+  },
+  {
+    "id": 53,
+    "pergunta": "Vejo que outros irmãos ficam animados e motivados quando compartilho com eles a minha visão sobre os propósitos de Deus."
+  },
+  {
+    "id": 54,
+    "pergunta": "Posso enxergar nas lutas e problemas de uma pessoa o quanto Deus se importa com ela."
+  },
+  {
+    "id": 55,
+    "pergunta": "Tenho prazer em ser útil na recuperação espiritual de crentes que enfraqueceram na fé ou se afastaram da igreja."
+  },
+  {
+    "id": 56,
+    "pergunta": "Às vezes, tenho uma forte sensação de que sei exatamente o que Deus deseja dizer a alguém e isso, posteriormente, é confirmado."
+  },
+  {
+    "id": 57,
+    "pergunta": "Sei passar às pessoas habilidades e orientações práticas em um nível fácil de compreender e aplicar."
+  }
+]
