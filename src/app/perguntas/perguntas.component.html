@@ -1,3 +1,26 @@
+<div class="sobre">
+  <h1 class="titulo">TESTE DE DONS ESPIRITUAIS</h1>
+  <p class="primeiro-texto">
+    Este teste ajudará você a identificar seus dons espirituais, ou seja, as
+    habilidades especiais que Deus deu a você por meio do Espírito Santo para
+    cooperar com Ele no avanço do Seu Reino, por meio da igreja local.
+    Instruções:
+  </p>
+  <ol class="lista">
+    <li>
+      Responda a todas as questões de forma sincera, o mais próximo possível da
+      sua experiência.
+    </li>
+    <li>
+      Para cada afirmação, coloque uma nota de 0 a 3 de acordo com a escala a
+      seguir.
+    </li>
+    <li>
+      Faça esta pergunta a você mesmo: “Esta afirmação tem sido a experiência da
+      minha vida?” 0. Nunca | 1. Às vezes | 2. Frequentemente | 3. Sempre
+    </li>
+  </ol>
+</div>
 <div class="container">
   <!-- Quando mostrarPerguntas for true, exibe as perguntas -->
   <form [formGroup]="formulario" *ngIf="mostrarPerguntas; else contatoForm">
@@ -41,12 +64,18 @@
     <form [formGroup]="contatoFormGroup" class="container-form">
       <mat-form-field appearance="fill">
         <mat-label>Nome</mat-label>
-        <input matInput formControlName="nome" required />
+        <input matInput formControlName="nome" required minlength="3" />
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Telefone</mat-label>
-        <input class="teste" matInput formControlName="telefone" required />
+        <input
+          class="teste"
+          matInput
+          formControlName="telefone"
+          required
+          maxlength="11"
+        />
       </mat-form-field>
 
       <button mat-raised-button color="primary" (click)="enviarContato()">

@@ -1,5 +1,32 @@
 @import "../../assets/css/variables.scss";
 
+.sobre {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  & .titulo {
+    font-weight: 600;
+  }
+
+  & .primeiro-texto {
+    font-size: 1rem;
+    min-width: 15rem;
+    max-width: 50rem;
+    font-weight: 600;
+  }
+  & .lista {
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    & li {
+      font-weight: 600;
+    }
+  }
+}
+
 .container {
   margin-top: 25px;
   padding: 0 20px;
@@ -10,6 +37,7 @@
       }
 
       .mat-horizontal-content-container {
+        font-size: 1rem;
         padding: 0;
         margin: 0;
       }
@@ -59,4 +87,9 @@
     display: flex;
     flex-flow: column;
   }
+}
+
+.ng-star-inserted {
+  font-size: 1rem;
+  font-weight: 600;
 }

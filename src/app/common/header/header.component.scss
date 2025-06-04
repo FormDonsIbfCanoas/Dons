@@ -1,34 +1,35 @@
-@import '../../../assets/css/variables.scss';
+@import "../../../assets/css/variables.scss";
 
 .header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /*   background-color: #007490; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  backdrop-filter: blur(2px);
+
+  .menu {
+    margin-left: 15px;
+    flex-basis: 29px;
+    color: #fedd0b;
+  }
+
+  .logo {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    // background-color: #007490;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    backdrop-filter: blur(2px);
-
-    .menu {
-        margin-left: 15px;
-        flex-basis: 29px;
-        color: #FEDD0B;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    width: 125px;
+    img {
+      width: inherit;
     }
-
-    .logo {
-        flex: 1;
-        text-align: center;
-        padding-right: 57px;
-        
-        img {
-            width: 57px;
-            padding: 8px 0;
-        }
-    }
+  }
 }
 
 .darkHeader {
-    background-color: $primary-transparency;
+  background-color: $primary-transparency;
 }
