@@ -1,38 +1,45 @@
 .container {
-    padding: 0 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-flow: column nowrap;
 
-    .card {
-        background: #FFF;
-        border-radius: 6px;
-        padding: 15px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 130px;
-        flex-direction: column;
-    
-        .icon-holder {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: #FFCC00;
-            margin-top: -65px;
-            align-self: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+  .card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 130px;
+    flex-direction: column;
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-            width: 100%;
-
-            .mat-expansion-panel {
-                box-shadow: none;
-                margin-top: 15px;
-            }
-        }
+    .icon-holder {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ffcc00;
+      margin-top: -65px;
+      align-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 100%;
+
+      .mat-expansion-panel {
+        box-shadow: none;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .botao {
+    margin-top: 1rem;
+    align-self: center;
+  }
 }
