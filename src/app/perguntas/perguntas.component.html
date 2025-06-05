@@ -64,17 +64,24 @@
     <form [formGroup]="contatoFormGroup" class="container-form">
       <mat-form-field appearance="fill">
         <mat-label>Nome</mat-label>
-        <input matInput formControlName="nome" required minlength="3" />
+        <input
+          matInput
+          formControlName="nome"
+          required
+          minlength="3"
+          maxlength="10"
+        />
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Telefone</mat-label>
         <input
-          class="teste"
           matInput
+          type="text"
           formControlName="telefone"
-          required
           maxlength="11"
+          pattern="[0-9]*"
+          (input)="validarNumeros($event)"
         />
       </mat-form-field>
 

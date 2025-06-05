@@ -3,9 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  title = 'Sem Nome';
 
-  title = 'IBC :: Teste de Dons';
+  setTitle(nome: string) {
+    this.title = nome;
+  }
 }

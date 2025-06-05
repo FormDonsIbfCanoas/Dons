@@ -6,6 +6,7 @@ import { Options } from '@angular-slider/ngx-slider';
 import { DomService } from '../common/doms.service';
 import { IDon, IDonScore } from '../common/dom.interface';
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'perguntas',
@@ -35,7 +36,8 @@ export class PerguntasComponent {
   constructor(
     httpClient: HttpClient,
     private domService: DomService,
-    private router: Router
+    private router: Router,
+    private servico: AppComponent
   ) {
     const perguntasCtrl = this.formulario.controls['perguntas'] as FormArray;
     httpClient
@@ -66,11 +68,17 @@ export class PerguntasComponent {
     const contato = this.contatoFormGroup.value;
 
     if (contato.nome && contato.telefone) {
-      console.log('Dados de contato:', contato);
+      this.servico.setTitle(contato.nome);
+      /*  console.log('Dados de contato:', contato); */
       this.mostrarPerguntas = true;
       localStorage.setItem('DadosForm', JSON.stringify(contato));
       // Aqui você pode fazer um POST para seu backend, se quiser
     }
+  }
+
+  validarNumeros(event: Event) {
+    const input = event.target as HTMLInputElement;
+    input.value = input.value.replace(/\D/g, ''); // remove tudo que não for número
   }
 
   calculateResults(scores: [{ pontos: number; perguntaId: number }]) {
