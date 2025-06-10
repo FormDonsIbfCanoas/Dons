@@ -7,6 +7,9 @@ import { DomService } from '../common/doms.service';
 import { IDon, IDonScore } from '../common/dom.interface';
 import { Router } from '@angular/router';
 import { AppComponent } from '../app.component';
+import autoTable from 'jspdf-autotable';
+import jsPDF from 'jspdf';
+import html2pdf from 'html2pdf.js';
 
 @Component({
   selector: 'perguntas',
@@ -66,7 +69,6 @@ export class PerguntasComponent {
 
   enviarContato() {
     const contato = this.contatoFormGroup.value;
-
     if (contato.nome && contato.telefone) {
       this.servico.setTitle(contato.nome);
       /*  console.log('Dados de contato:', contato); */

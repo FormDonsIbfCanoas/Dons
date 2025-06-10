@@ -18,5 +18,206 @@
   </head>
   <body class="mat-typography">
     <app-root></app-root>
+    <div class="conteudo" style="display: none">
+      <div class="bloco-imagem">
+        <img src="./assets/image.png" alt="" /><img
+          class="imagem2"
+          src="./assets/img.png"
+          alt=""
+        />
+      </div>
+      <div class="dados">
+        <div class="bloco-nome">
+          <strong>Nome:</strong><span class="nome"></span>
+        </div>
+        <div class="bloco-telefone">
+          <strong>Telefone:</strong><span class="telefone"></span>
+        </div>
+      </div>
+      <!-- <div class="texto">
+        <h2>Alguns lembretes importantes!</h2>
+        <ol>
+          <li>
+            <strong>Alguns dons mencionados na Bíblia</strong>, como cura,
+            línguas, interpretação e celibato, não estão presentes no teste, uma
+            vez que sua manifestação é mais evidente na vida do crente e ocorre
+            de formas muito particulares.
+          </li>
+          <li>
+            <strong>A lista dos dons varia</strong> de acordo com a abordagem do
+            autor de cada estudo. Embora inspirada na Bíblia, ela não é
+            exaustiva, mas serve para dar uma breve orientação sobre algumas
+            habilidades importantes no corpo de Cristo.
+          </li>
+          <li>
+            <strong>Independentemente do resultado do teste</strong>, todos
+            somos chamados a servir no Corpo de Cristo e por meio dele
+            exatamente do nosso jeito. Além disso, todo crente deve procurar
+            fortalecer sua fé, orar, conhecer a Palavra, servir e amar a Deus,
+            amar o próximo e proclamar Jesus!
+          </li>
+          <li>
+            <strong>Mesmo que você não tenha um determinado dom</strong> que
+            melhor se adequaria a uma área de atuação, não quer dizer que você
+            não possa atuar nela. Há muitas formas de servir dentro de um
+            ministério. Somos chamados, segundo palavras do apóstolo Paulo, a
+            buscar “com dedicação os melhores dons” (1Co 12:31).
+          </li>
+        </ol>
+      </div> -->
+      <div class="dons-espirituais">
+        <h1 class="h1">SEUS DONS ESPIRITUAIS SÃO:</h1>
+        <div class="bloco-dons"></div>
+      </div>
+      <div class="tabela">
+        <div class="primeira-linha">
+          <div class="cabecalho nome">Area</div>
+          <div class="cabecalho pontuacao">Pontuação</div>
+          <div class="cabecalho perguntas">Perguntas</div>
+        </div>
+        <!-- <div class="linhas">
+          <div class="coluna nome">Encorojamento/Exortação</div>
+          <div class="coluna pontuacao">6</div>
+          <div class="coluna perguntas">8, 27, 46</div>
+        </div> -->
+      </div>
+    </div>
+    <style>
+      .conteudo {
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        width: 595px;
+        height: 842px;
+        display: flex;
+        flex-flow: column;
+        gap: 0.5rem;
+      }
+      & .bloco-imagem {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 1rem 2.5rem 1rem 0;
+        & .imagem2 {
+          width: 200px;
+        }
+      }
+      & .dados {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+      }
+      .dons-espirituais {
+        margin-top: 1rem;
+        border: solid 1px black;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        & .h1 {
+          font-size: 20px;
+        }
+        & .bloco-dons {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin: 0 10px 10px 10px;
+          gap: 0.5rem;
+          font-weight: 600;
+          font-size: 10px;
+          & .bloco-don {
+            border: solid 2.5px black;
+            width: 30%;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .texto {
+        h2 {
+          font-size: 15px;
+        }
+        li {
+          margin-top: 0.5rem;
+          font-size: 13px;
+        }
+      }
+      .tabela {
+        margin-top: 1rem;
+        width: 100%;
+        & .primeira-linha {
+          height: 25px;
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          border: solid 1px black;
+
+          & .nome {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            border-right: solid 1px black;
+          }
+          & .pontuacao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            border-right: solid 1px black;
+          }
+          & .perguntas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+          }
+          & div {
+            padding: 0.15rem;
+          }
+        }
+        & .linhas {
+          height: 25px;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          border: solid 1px black;
+          & .nome {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            border-right: solid 1px black;
+          }
+          & .pontuacao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            border-right: solid 1px black;
+          }
+          & .perguntas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+          }
+          & div {
+            padding: 0.15rem;
+          }
+        }
+      }
+    </style>
   </body>
 </html>
