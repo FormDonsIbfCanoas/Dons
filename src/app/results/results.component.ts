@@ -139,7 +139,7 @@ export class ResultsComponent {
            </div>`;
     });
     top3.innerHTML = '';
-    JSON.parse(top3Dados ? top3Dados : '[]').map((element: any) => {
+    top3Dados.map((element: any) => {
       top3.innerHTML += `<div class="bloco-don">${element.name}</div>`;
     });
 
