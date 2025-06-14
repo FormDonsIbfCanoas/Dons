@@ -43,3 +43,13 @@
     align-self: center;
   }
 }
+
+mat-list-option {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .span {
+    font-weight: 600;
+    color: #673ab7;
+  }
+}
