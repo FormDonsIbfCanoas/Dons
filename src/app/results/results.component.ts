@@ -133,12 +133,12 @@ export class ResultsComponent {
     let conteudohtml = '';
     dadosTotais.map((element: any) => {
       conteudohtml += `<div class="linhas">
-            <div class="coluna nome">${element.name}</div>
-            <div class="coluna pontuacao">${element.score}</div>
-            <div class="coluna perguntas">${element.questions}</div>
-          </div>`;
+             <div class="coluna nome">${element.name}</div>
+             <div class="coluna pontuacao">${element.score}</div>
+             <div class="coluna perguntas">${element.questions}</div>
+           </div>`;
     });
-
+    top3.innerHTML = '';
     JSON.parse(top3Dados ? top3Dados : '[]').map((element: any) => {
       top3.innerHTML += `<div class="bloco-don">${element.name}</div>`;
     });
@@ -150,24 +150,21 @@ export class ResultsComponent {
     // Torna o elemento visível
     elemento.style.display = 'flex';
 
-    // Espera um tempo para garantir que o elemento foi renderizado
-    setTimeout(() => {
-      const opcoes = {
-        margin: [10, 25, 0, 25],
-        filename: 'dados.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-      };
+    const opcoes = {
+      margin: [10, 25, 0, 25],
+      filename: 'dados.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    };
 
-      html2pdf()
-        .set(opcoes)
-        .from(elemento)
-        .save()
-        .then(() => {
-          // Esconde o elemento novamente depois de gerar o PDF
-          elemento.style.display = 'none';
-        });
-    }, 200); // 200ms é geralmente suficiente
+    html2pdf()
+      .set(opcoes)
+      .from(elemento)
+      .save()
+      .then(() => {
+        // Esconde o elemento novamente depois de gerar o PDF
+        elemento.style.display = 'none';
+      });
   }
 }
