@@ -117,12 +117,10 @@ export class ResultsComponent {
   }
 
   gerarPdf() {
-    let dados = localStorage.getItem('arrayCompetenciasRestantes');
-    let top3Dados = localStorage.getItem('arrayTop3Competencias');
+    let dados = this.resultados;
+    let top3Dados = this.topDons;
     let dadosForm = localStorage.getItem('DadosForm');
-    let dadosTotais = JSON.parse(top3Dados ? top3Dados : '[]').concat(
-      JSON.parse(dados ? dados : '[]')
-    );
+    let dadosTotais = top3Dados.concat(dados);
     const top3 = document.querySelector('.bloco-dons') as HTMLElement;
     const tabela = document.querySelector('.conteudo .tabela') as HTMLElement;
     const nome = document.querySelector('.nome') as HTMLElement;
