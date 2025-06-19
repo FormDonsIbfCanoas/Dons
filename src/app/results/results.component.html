@@ -30,14 +30,14 @@
       </svg>
     </div>
     <div class="content">
-      <h2>Seus dons mais fortes são:</h2>
+      <h2 style="margin: 0 0 0 0">Seus dons mais fortes são:</h2>
+      <span class="span">Clique no dom para saber mais a respeito</span>
       <mat-selection-list #donsTop [multiple]="false">
         <mat-list-option
           *ngFor="let don of topDons"
           (click)="showDescription(don)"
         >
           {{ don.name }} - {{ don.score }}
-          <span class="span">Clique Saber Mais Sobre o Dom</span>
         </mat-list-option>
       </mat-selection-list>
 
@@ -53,7 +53,6 @@
             (click)="showDescription(don)"
           >
             {{ don.name }} - {{ don.score }}
-            <span class="span">Clique Saber Mais Sobre o Dom</span>
           </mat-list-option>
         </mat-selection-list>
       </mat-expansion-panel>
