@@ -18,14 +18,17 @@
   }
 
   .logo {
-    margin-right: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
     text-align: center;
     width: 125px;
+    margin: 15px 90px 15px 0;
     img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: inherit;
     }
   }
