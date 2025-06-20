@@ -20,18 +20,21 @@
     <app-root></app-root>
     <div class="conteudo" style="display: none">
       <div class="bloco-imagem">
-        <img src="./assets/image.png" alt="" /><img
+        <img src="./image.png" alt="" /><img
           class="imagem2"
-          src="./assets/img.png"
+          src="./img.png"
           alt=""
         />
       </div>
       <div class="dados">
         <div class="bloco-nome">
-          <strong>Nome:</strong><span class="nome"></span>
+          <strong>Nome:</strong
+          ><span class="nome"
+            >aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span
+          >
         </div>
         <div class="bloco-telefone">
-          <strong>Telefone:</strong><span class="telefone"></span>
+          <strong>Telefone:</strong><span class="telefone">51985960311</span>
         </div>
       </div>
       <!-- <div class="texto">
@@ -107,6 +110,12 @@
         display: flex;
         flex-flow: row nowrap;
         gap: 2rem;
+
+        & .bloco-nome {
+          & .nome {
+            word-break: break-all;
+          }
+        }
       }
       .dons-espirituais {
         margin-top: 1rem;
